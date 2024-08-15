@@ -146,8 +146,7 @@ function CreatePost() {
                                         <button
                                                 type='submit'
                                                 className='mt-5 text-white font-medium bg-[#e56f56]
-                                                hover:rounded-full transition-all duration-150
-                                                text-sm w-full sm:w-auto px-5 py-2.5 text-center'
+                                                rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
                                         >
                                                 {loading ? 'Sharing...' : 'Share with the community'}
                                         </button>
