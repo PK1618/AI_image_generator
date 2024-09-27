@@ -25,8 +25,9 @@ function Home() {
         const fetchPosts = async () => {
                 setLoading(true);
                 try {
+
                         const response = await fetch(
-                                'http://localhost:8080/api/v1/posts', {
+                                'https://ai-image-generator-ua5s.onrender.com/api/v1/posts', {
                                 method: 'GET',
                                 headers: {
                                         'Content-Type': 'application/json',
@@ -34,7 +35,6 @@ function Home() {
                         })
                         if (response.ok) {
                                 const result = await response.json();
-
                                 setAllPosts(result.data.reverse());
                         }
                 } catch (err) {
